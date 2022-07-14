@@ -123,6 +123,7 @@ function edit_action(num, num2) {
 
   $("#btnnn")[0].style.display = "none";
   $("#btn_search")[0].style.display = "none";
+  $(".btn-primary")[0].style.display = "none";
   $(".btn_edit_fin")[0].className = "btn_edit_fin d-block";
 }
 let truyendulieu = 0;
@@ -148,6 +149,7 @@ function edit_to_list() {
       filter[truyendulieu].time = time;
       $("#btnnn")[0].style.display = "inline-block";
       $("#btn_search")[0].style.display = "inline-block";
+      $(".btn-primary")[0].style.display = "inline-block";
       $(".btn_edit_fin")[0].className = "btn_edit_fin";
       $(".cont_add_titulo_cont")[0].style.pointerEvents = "auto";
       $(".rows")[0].style.pointerEvents = "auto";
@@ -164,6 +166,7 @@ function edit_to_list() {
       arr_obj[truyendulieu].time = time;
       $("#btnnn")[0].style.display = "inline-block";
       $("#btn_search")[0].style.display = "inline-block";
+      $(".btn-primary")[0].style.display = "inline-block";
       $(".btn_edit_fin")[0].className = "btn_edit_fin";
       $(".cont_add_titulo_cont")[0].style.pointerEvents = "auto";
       $(".rows")[0].style.pointerEvents = "auto";
