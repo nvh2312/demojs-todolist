@@ -166,6 +166,19 @@ body {
     cursor: pointer;
 }
 
+.btn_edit_fin {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #4C75A1;
+    border: none;
+    margin: 10px auto;
+    box-shadow: 1px 5px 10px -5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
 .titl_description {
     padding-top: 10px;
     text-align: left;
@@ -315,23 +328,23 @@ body {
     z-index: 1;
 }
 
-.list_shopping>.col_md_1_list {
+.SHOPPING>.col_md_1_list {
     border-left: 4px solid #e45;
     color: #e45;
 }
 
-.list_work>.col_md_1_list {
+.WORK>.col_md_1_list {
     border-left: 4px solid #2A476B;
     color: #2A476B;
 }
 
-.list_sport>.col_md_1_list {
+.SPORT>.col_md_1_list {
     border-left: 4px solid #EF8A18;
     color: #EF8A18;
 }
 
 
-.list_rest>.col_md_1_list{
+.REST>.col_md_1_list{
     border-left: 4px solid #16c02c;
     color: #16c02c;
 }
@@ -341,3 +354,14 @@ body {
     margin: 15px 0px;
     z-index: 1;
 }
+.rows{
+    margin-top: 22px;
+    display: flex;
+    margin-left: 30px;
+    margin-right: -8px;
+}
+.input_search{
+    width: 74%;
+    margin-left: -125px;
+}
+

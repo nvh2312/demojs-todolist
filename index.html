@@ -18,8 +18,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-    <script src= "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
     <title>Document</title>
 </head>
@@ -32,8 +33,7 @@
                 <div class="cont_titulo_cont">
                     <h3>THINGS TO DO</h3>
                 </div>
-                <div class="cont_add_titulo_cont"><a href="#e" onclick="add_new()"><i
-                            class="fa fa-plus"></i></a>
+                <div class="cont_add_titulo_cont"><a href="#e" onclick="add_new()"><i class="fa fa-plus"></i></a>
                 </div>
 
                 <!--   End cont_todo_list_top  -->
@@ -55,61 +55,63 @@
                             <!-- End td 1 -->
                         </td>
                         <td>
-                            <input type="text" class="input_title_desc" id ="title" placeholder="Type Here" />
+                            <input type="text" class="input_title_desc" id="title" placeholder="Type Here" />
 
                             <!-- End td 2 -->
                         </td>
                         <td>
- 
-                                 <input type="text" id="date_select" class="input_description_title datepicker" placeholder="Pick Date" name="date" readonly></div>
-                            <!-- End td 3 -->
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="titl_description">Time</th>
-                    </tr>
-                    <tr>
 
-                        <td colspan="3">
-                            <input type="text" id="datetimepicker" placeholder="Click here to select time!"/>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="titl_description">Description</th>
-                    </tr>
-                    <tr>
-
-                        <td colspan="3">
-                            <input type="text" class="input_description " placeholder="Type Here" required />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <button class="btn_add_fin" id = "btnnn" onclick="add_to_list()">ADD</button>
-                        </td>
-                    </tr>
-                </table>
-
+                            <input type="text" id="date_select" class="input_description_title datepicker"
+                                placeholder="Pick Date" name="date" readonly>
             </div>
+            <!-- End td 3 -->
+            </td>
+            </tr>
+            <tr>
+                <th class="titl_description">Time</th>
+            </tr>
+            <tr>
 
-            <div class="cont_princ_lists">
-                <ul>
-  
-                </ul>
-            </div>
+                <td colspan="3">
+                    <input type="text" id="datetimepicker" placeholder="Click here to select time!" />
 
+                </td>
+            </tr>
+            <tr>
+                <th class="titl_description">Description</th>
+            </tr>
+            <tr>
+
+                <td colspan="3">
+                    <input type="text" class="input_description " placeholder="Type Here" required />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button class="btn_add_fin" id="btnnn" onclick="add_to_list()">ADD</button>
+                    <button class="btn_add_fin" id="btn_search" onclick="search_in_list()">Search</button>
+                    <button type="button" class="btn btn-primary ml-5" onclick="reset()">Reset</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button class="btn_edit_fin" id="btnedit" onclick="edit_to_list()">Save</button>
+                </td>
+            </tr>
+            </table>
 
         </div>
+
+        <div class="cont_princ_lists">
+            <ul class="todo_item">
+
+            </ul>
+        </div>
+
+
     </div>
 
-
-
     <script src="main.js"></script>
-
-
-
-
 
 
 </body>
